@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetEasy Extractor</title>
+    <script src="popup.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; width: 350px; padding: 10px; }
+        .listing-container { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; background: #f9f9f9; }
+        .field { display: flex; justify-content: space-between; padding: 5px 0; }
+        .field label { font-weight: bold; width: 40%; }
+        .field input, .field span { width: 55%; border: none; background: transparent; font-size: 14px; }
+        .field input { border: 1px solid #ccc; padding: 2px; }
+        a { color: blue; text-decoration: none; }
+        button { margin-top: 10px; padding: 5px 10px; font-size: 14px; cursor: pointer; }
+        #copyMessage { color: green; font-size: 14px; display: none; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h3>StreetEasy Listing Info</h3>
+    <div id="listings-container">
+        <p>Loading...</p>
+    </div>
+    <button id="copyClipboard">Copy to Clipboard</button>
+    <button id="saveToSheets">Save to Google Sheets</button>
+    <p id="copyMessage">Copied to clipboard! ✅</p>
+    <p id="saveMessage" style="color: green; font-size: 14px; display: none;">Saved to Google Sheets! ✅</p>
+</body>
+</html>
